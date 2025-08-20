@@ -29,9 +29,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // Split parameters
 #define SERIAL_USART_TX_PIN GP1
 #define SPLIT_HAND_MATRIX_GRID  GP26, GP6
-#define SPLIT_HAND_MATRIX_GRID_LOW_IS_LEFT
-// #define SPLIT_USB_DETECT
-// #define SPLIT_USB_TIMEOUT       500
+// #define SPLIT_HAND_MATRIX_GRID_LOW_IS_LEFT
+#define SPLIT_USB_DETECT
+#define SPLIT_USB_TIMEOUT       500
+#define SPLIT_WATCHDOG_ENABLE
+#define SPLIT_WATCHDOG_TIMEOUT  10000
 
 // If your PC does not recognize Keyball, try setting this macro. This macro
 // increases the firmware size by 200 bytes, so it is disabled by default, but
@@ -79,5 +81,5 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define SPI_MOSI_PIN GP23
 
 // To squeeze firmware size
-// #undef LOCKING_SUPPORT_ENABLE
-// #undef LOCKING_RESYNC_ENABLE
+#undef LOCKING_SUPPORT_ENABLE
+#undef LOCKING_RESYNC_ENABLE
