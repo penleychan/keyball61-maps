@@ -12,6 +12,7 @@ CUSTOM_MATRIX = lite
 SRC += lib/duplexmatrix/duplexmatrix.c
 
 # Split keyboard.
+SPLIT_KEYBOARD = yes
 SERIAL_DRIVER = vendor
 
 # Optical sensor driver for trackball.
